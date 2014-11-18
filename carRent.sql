@@ -1,5 +1,15 @@
 /* CPSC 471 Fall 2014
- * SQL Tables for Project
+ * SQL Tables: Relational Model
+ * Submitted by Spencer Howe, Tristan Schorn, Arnold Padillo
+ * 
+ * NOTES:
+ *	- Can test with http://sqlfiddle.com/ 
+ *
+ * TODO:
+ * - Add triggers
+ * - Inserting values in the tables now that they are initialized
+ * - Implement foreign keys
+ *
  */
 
 CREATE TABLE Vehicle(
@@ -16,21 +26,21 @@ CREATE TABLE Vehicle(
 );
 
 CREATE TABLE Branch(
-	BRANCH_NO INT NOT NULL,
+	BRANCH_NO INT PRIMARY KEY NOT NULL,
 	LOCATION VARCHAR(30) NOT NULL,
 	ADDRESS VARCHAR(30) NOT NULL,
 	BRANCH_NAME VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE Customer(
-	LICENSE_NO INT NOT NULL,
+	LICENSE_NO INT PRIMARY KEY NOT NULL,
 	CUST_NAME VARCHAR (30) NOT NULL,
 	PHONE_NO INT NOT NULL,
 	CREDCARD_NO INT NOT NULL
 );
 
 CREATE TABLE Employee(
-	EMPLOYEE_ID INT NOT NULL,
+	EMPLOYEE_ID INT PRIMARY KEY NOT NULL,
 	SUPERVISOR_ID INT NOT NULL,
 	EMP_NAME VARCHAR (30) NOT NULL
 );
@@ -42,11 +52,11 @@ CREATE TABLE WorksAt(
 );
 
 CREATE TABLE Rental(
-	RENTAL_NO INT NOT NULL,
+	RENTAL_NO INT PRIMARY KEY NOT NULL,
 	CUST_LICEN INT NOT NULL,
 	BRANCH_NO INT NOT NULL,
 	EMP_NAME VARCHAR (30) NOT NULL,
-	VEH_SERI VARCHAR (30) NOT NULL
+	VEH_NO VARCHAR (30) NOT NULL
 );
 
 
