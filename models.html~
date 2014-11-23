@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>
+		car.Rent() - Models
+		</title>
+	</head>
+	<body>
+	<p>
+	<input type=button onClick="location.href='index.html'" value ='<< Home'>	
+	</p>
+
+
+	<div align="center">
+	<h1>Our Vehicle Models</h1>
+	<p>Select the vehicle model you would like to rent.</p>
+	<hr>
+	</div>
+	</body>
+
+</html>

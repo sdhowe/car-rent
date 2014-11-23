@@ -1,0 +1,26 @@
+<html>
+
+	<head>
+		<title>
+		car.Rent() - Homepage
+		</title>
+	</head>
+	<body>
+	<div align="center">
+	<h1>Welcome to car.Rent()!</h1>
+	<p>Your home for convenient, modern car rentals.</p>
+	<hr>
+
+	<p>
+	<input type=button onClick="location.href='location.html'" value ='Search by location'>	
+	</p>
+
+	<p>
+	<input type=button onClick="location.href='models.html'" value ='Search by Models'>	
+	</p>
+
+	</div>
+	</body>
+
+
+</html>
