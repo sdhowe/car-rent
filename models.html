@@ -6,18 +6,31 @@
 	</head>
 	<body>
 	<div align="center">
-	<h1>Our Vehicle Models</h1>
+	<h1>Vehicles</h1>
 	<p>Select the vehicle model you would like to rent.</p>
 	<hr>
 
+	/*Selections scale dynamically, each choice queries database for possible choices for next dropdown, ensuring valid queries*/
+	<select id ="Vehicle Type">
+		<option selected value="base">What Type Of Vehicle Are you Looking For?</option>
+		<option value="Car">Car</option>
+		<option value="Truck">Truck</option>
+		<option value="Sportscar">Sportscar</option>
+		<option value="Van">Van</option>
+		
 
-	<select>
-		<option value="ford">Ford</option>
-		<option value="honda">Honda</option>
-		<option value="lotus">Lotus</option>
-		<option value="tesla">Tesla</option>
-		<option value="toyota">Toyota</option>
-
+	</select>
+	
+	<br>
+	
+	<select id="Make">
+	<option>Please Select a Vehicle Type</option>
+	</select>
+	
+	<br>
+	
+	<select id="Model">
+	<option>Please Select a Vehicle Make</option>
 	</select>
 
 	</div>
